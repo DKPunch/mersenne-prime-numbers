@@ -10,23 +10,31 @@
 
 using namespace std;
 
+//Global Constants
+const int nWidth = 16;
+const int merWidth = 30;
+
 //Function Prototypes
 bool isPrime(long n);
 
 int main () {
 	
 	long merPrime;
-	cout << "Mersenne Primes by Joseph Schell" << endl;
-	cout << "n" << setw(21) << "Mersenne Prime" << endl;
-	cout << "==" << setw(22) << " ================\n" << endl;	
+	cout << "Mersenne Primes by Joseph Schell\n"
+		<< "--------------------------------\n"
+		<< left << setw(nWidth) << "N"
+		<< left << setw(merWidth) << "Mersenne Prime" << endl;
+	cout << "--------------------------------" << endl;
 	
 	for (long n = 2; n <= 19; n++) {
 		isPrime(n);
 		merPrime = pow(2,n) - 1;	// Finds Mersenne number 
 		if (isPrime(n) && isPrime(merPrime)) {
-			cout << n << setw(20) << merPrime << endl;
+			cout << setw(nWidth) << n
+				<< setw(merWidth) << merPrime << endl;
     		}
 	}
+	cout << "--------------------------------" << endl;
 	char reply;
 	cout << "Enter q and press Enter to quit: ";
     	cin >> reply;

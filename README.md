@@ -1,4 +1,4 @@
-# mersenne-prime-numbers
+# Mersenne Prime Number Generator
 
 This was a project assigned to me about half way into my first term
 of a Computer Science course. The assignment required that we have
@@ -11,3 +11,7 @@ As an example, a prime number is represented when  n = 5 in the formula
 The program will compute the value of 2^n – 1 for all integers starting 
 at n = 1 and will continue until n = 19. If the result is a prime number, 
 then it is a Mersenne Prime and it will be printed as output.
+
+# Example of program execution
+
+

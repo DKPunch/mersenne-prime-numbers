@@ -14,4 +14,4 @@ then it is a Mersenne Prime and it will be printed as output.
 
 # Example of program execution
 
-
+![Alt text](https://github.com/DKPunch/mersenne-prime-numbers/blob/master/primesPic.jpg?raw=true "Screenshot")
